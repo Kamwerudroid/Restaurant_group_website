@@ -1,126 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careeers</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <div class="bg-[url(/pexels-chanwalrus-958545.jpg)] bg-clip-border">
-  <h1 class="uppercase text-5xl text-white mb-10 ">Careers at OLG</h1>
-  <p class="text-white">Apply to become a part of our team and we'll get back to you ASAP!</p>
-  </div>
-
-  <!-- form section -->
-    <form class="w-full max-w-lg">
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-        First Name
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
-      <p class="text-red-500 text-xs italic">Please fill out this field.</p>
-    </div>
-    <div class="w-full md:w-1/2 px-3">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-        Last Name
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
-    </div>
-  </div>
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full px-3">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
-        Email
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .header {
+        background-image: url("pexels-chanwalrus-958545.jpg");
+        width: auto;
+        height: 300px;
+        background-size: cover;        
+        filter: brightness(100%);
+      }
       
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      img {
+        opacity: 0.5;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="bg-[url(/pexels-chanwalrus-958545.jpg)] bg-clip-border"> -->
+    <div class="header">
+      <h1 class="uppercase text-5xl text-black font-bold text-center pt-14">
+        Careers at OLG
+      </h1>
+      <p class="text-black text-center font-bold ">
+        Apply to become a part of our team and we'll get back to you ASAP!
+      </p>
     </div>
-  </div>
-  <div class="flex flex-wrap -mx-3 mb-2">
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
-        City
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+    <div class="container">
+      <!-- <img src="pexels-chanwalrus-958545.jpg" alt="Snow" style="width: 100%; height:300px ;" /> -->
+      <!-- <div class="bottom-left">Bottom Left</div> -->
+      <!-- <div class="top-left">Top Left</div> -->
+      <!-- <div class="top-right">Top Right</div> -->
+      <!-- <div class="bottom-right">Bottom Right</div> -->
     </div>
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-        State
-      </label>
-      <div class="relative">
-        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option>New Mexico</option>
-          <option>Missouri</option>
-          <option>Texas</option>
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+    <!-- form section -->
+    <form class="w-full max-w-lg">
+      <div class="flex flex-wrap -mx-3 mb-6 mt-5 px-10" >
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-first-name"
+          >
+            First Name
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            
+          />
+        </div>
+        <div class="w-full md:w-1/2 px-3">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-last-name"
+          >
+            Last Name
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-last-name"
+            type="text"
+            
+          />
         </div>
       </div>
-    </div>
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
-        Zip
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
-    </div>
-  </div>
-</form>
 
-<h2>Which postion(s) are you interested in.</h2>
-<br>
-<div class="flex items-center mb-4">  
+      <h2 class="block uppercase tracking-wide text-black text-md font-bold mb-2 px-10">Birthdate</h2>
+    <form class="w-full max-w-lg">
+        <div class="grid-cols-3 grid gap-2 grid-row-2 px-10  ">
+            <div><label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="Month"
+          >
+            
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id=""
+            type="number"
+            placeholder="Month"
+            
+          />
+          </div>
+          <div>
+
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="Month"
+          >
+            
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="number"
+            placeholder="Day"
+            
+          />
+          </div>
+          <div>
+
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="Month"
+          >
+            
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="number"
+            placeholder="Year"
+            
+          />
+          </div>
+
+        </div>
+
+        </div>
+    </form>
+    <div>
+
+    </div>
     
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Line Cook</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Prep Cook</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Dish/Utility/Busser</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Expo</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Kitchen Manager/Chef</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Front of House Manager</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Server</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="disabled-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Bartender</label>
-</div>
-<div class="flex items-center mb-4">
-    <input id="checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Host</label>
-</div>
-<h2>How did you hear about us?</h2>
+    <div>
 
-<form class="max-w-sm mx-auto">
-  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
-  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
-</form>
+    </div>
+    
+      <div class="flex flex-wrap -mx-3 mb-6 px-10">
+        <div class="w-full px-3">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="email"
+            type="email"
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-3 mb-2 px-10 ">
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-city"
+          >
+            City
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-city"
+            type="text"
+            
+          />
+        </div>
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-state"
+          >
+            State
+          </label>
+          <div class="relative">
+            <select
+              class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              id="grid-state"
+            >
+              <option>New Mexico</option>
+              <option>Missouri</option>
+              <option>Texas</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+            >
+              <svg
+                class="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0 px">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-zip"
+          >
+            Zip
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-black border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-zip"
+            type="text"
+            
+          />
+        </div>
+      </div>
+    </form> 
 
+    <h2 class="block uppercase tracking-wide text-black text-md font-bold mb-2 px-10 pt-8">Which postion(s) are you interested in?</h2>
+    <div class="px-10">
+    <div class="flex items-center mb-4 px">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black"
+        >Line Cook</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black"
+        >Prep Cook</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black"
+        >Dish/Utility/Busser</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black "
+        >Expo</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black "
+        >Kitchen Manager/Chef</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black "
+        >Front of House Manager</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black"
+        >Server</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="disabled-checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black "
+        >Bartender</label
+      >
+    </div>
+    <div class="flex items-center mb-4">
+      <input
+        id="checkbox"
+        type="checkbox"
+        value=""
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label
+        for="checkbox"
+        class="ms-2 text-sm font-medium text-black "
+        >Host</label
+      >
+    </div>
+    </div>
 
+    <div class="px-10 pt-8">
+    <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2 "
+            for="grid-first-name"
+          >
+            How did you hear about us?
+          </label>
+          <input
+            class=" appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            
+          />
+          </div>
 
+<div class="px-10 pt-8">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-first-name"
+          >
+            Friends or relatives employed by OLG?
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            
+          />
+          </div>
 
+          <div class="px-10 pt-8">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-first-name"
+          >
+            Days and hours available?
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            
+          />
+          </div>
 
+          <div class="px-10 pt-8">
+          <label
+            class="block uppercase tracking-wide text-black text-md font-bold mb-2"
+            for="grid-first-name"
+          >
+            Emergency Contact?
+          </label>
+          <input
+            class="appearance-none block w-full bg-white text-gray-700 border border-black  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            
+          />
+          </div>
+          <div class="px-10 pt-8">
+            <p class="block uppercase tracking-wide text-black text-md font-bold mb-2">Upload resume(optional)</p>
+            <button class="bg-gray-400 border border-black display-inline px-2">Choose file</button><span class="px-3">No file chosen</span>
 
+            <br>
+            <br>
+            <p>Accepted file types: pdf, doc, docx, Max. file size: 5 MB.</p>
+            <br><br>
+            <button class="uppercase text-white bg-yellow-600 px-4 py-3">Submit</button>
+            <br><br>
+            <p class="pb-5">Burruss Tucker Restaurant Group APPLICATION FOR EMPLOYMENT (BTRG) is an EQUAL OPPORTUNITY EMPLOYER & does not discriminate in employment) No question on this application is used for the purpose of limiting or exchanging any applicant’s consideration for employment on a basis prohibited by local, state or federal law</p>
+          </div>
+          <footer class="bg-black ">
+            <footer class="bg-black ">
+    <div class="container px-6 py-8 mx-auto ">
+        <div class="ml-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
+            <div>
+                
+        
 
-</body>
+        <div class="sm:flex sm:items-center sm:justify-between ">
+            <p class="text-sm text-gray-400 ">© Copyright 2025. All Rights Reserved.</p>
+
+            
+            </div>
+        </div>
+    </div>
+          </footer>
+
+          
+  </body>
 </html>
