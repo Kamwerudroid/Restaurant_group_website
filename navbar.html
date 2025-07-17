@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<style>
+    header{
+        background-color: #96794d;
+    }
+    a, .dropbtn, .button{
+        font-family: "Sancreek", serif;
+        font-size: 25px;
+    }
+    .dropbtn {
+  background-color: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
+</style>
+<body>
+    <header class="text-gray-600 body-font  text-white ">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center px-3">
+    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+      <a class="mr-5 hover:text-gray-900 pl-20 px-4">home</a>
+      <a class="mr-5 hover:text-gray-900 px-4">our story</a>
+      <a class="mr-5 hover:text-gray-900 px-4">menu</a>
+      
+    </nav>
+    <a class="object-center flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+      <img src="olg-logo-sticky-1.png" alt="logo">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg> -->
+      <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
+    </a>
+    
+    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+      <a class="mr-5 hover:text-gray-900 pl-20 px-8">shop</a>
+      <a href="careers.html" class="mr-5 hover:text-gray-900 px-8">careers</a>
+      <div class="dropdown">
+  <button class="dropbtn text-[25px]">more</button>
+  <div class="dropdown-content">
+  <a href="#">Locations & Hours</a>
+  <a href="#">Events</a>
+  <a href="#">Doordash</a>
+  </div>
+</div>
+        </ul>
+      </a>      
+    </nav>
+    <!-- <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div> -->
+  </div>
+</header>
+    
+</body>
+</html>
